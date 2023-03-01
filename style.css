@@ -1,0 +1,69 @@
+.produto {
+    height: fit-content;
+}
+
+.header {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    font-size: 0.8em;
+    margin-bottom: 50px;
+}
+
+.description img {
+    width: 150px;
+    height: 150px;
+}
+
+.description p {
+    margin-left: 1em;
+}
+
+#servicos p {
+    font-size: 0.8em;
+}
+
+#servicos .row{
+   margin: 0, 10;
+}
+
+#historia p {
+    font-size: 0.8em;
+}
+
+
+@media (min-width: 992px) { 
+    .header {
+        margin-left: 120px;
+        margin-right: 120px; 
+    }
+    
+    .description {
+        margin-left: 120px;
+        margin-right: 120px; 
+        font-size: 1em; 
+    }
+
+    #servicos p {
+        font-size: 1em;
+    }
+ }
+
+@media (max-width: 576px) {
+    .description {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description p {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
